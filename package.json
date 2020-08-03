@@ -5,11 +5,17 @@
   "scripts": {
     "dev": "next dev -p ${PORT-3000}",
     "build": "next build",
+    "export": "next export",
     "start": "next start -p ${PORT-80}"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "antd": "^4.5.1",
+    "axios": "^0.19.2",
     "next": "9.5.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.1",
+    "uuid": "^8.3.0"
   }
 }
