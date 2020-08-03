@@ -22,6 +22,12 @@ export default function Home() {
         <Link href="/get-uuid">
           <a>Get UUID</a>
         </Link>
+        <Link href="/get-double/[num]" as="/get-double/11">
+          <a>Get Double 11</a>
+        </Link>
+        <Link href="/get-double/[num]" as="/get-double/33">
+          <a>Get Double 33</a>
+        </Link>
         <DatePicker />
         <Button onClick={() => console.log("Button click")}>Click Me</Button>
       </main>

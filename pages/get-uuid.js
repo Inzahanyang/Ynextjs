@@ -16,10 +16,15 @@ const LinkContainer = styled.div`
   margin-top: 40px;
 `;
 
+const Title = styled.h1`
+  margin-bottom: 20px;
+`;
+
 const GetUuid = props => {
   const getUuid = async () => {};
   return (
     <Container>
+      <Title>{props.label}</Title>
       {props.uuid}
       <LinkContainer>
         <Link href="/">
@@ -33,6 +38,7 @@ const GetUuid = props => {
 GetUuid.getInitialProps = async () => {
   const { data } = await axios.get("http://localhost:3000" + "/api/uuid");
   return {
+    label: "UUID",
     uuid: data.uuid,
   };
 };
